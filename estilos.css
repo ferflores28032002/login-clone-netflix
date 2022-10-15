@@ -1,0 +1,213 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Acme&family=Corinthia&family=Crete+Round&family=Dongle:wght@700&family=Merriweather:wght@300&family=Montserrat:wght@400;500;700&family=Patrick+Hand&family=Roboto:wght@700&family=Slabo+13px&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Acme&family=Corinthia&family=Crete+Round&family=Dongle:wght@700&family=IBM+Plex+Sans+Thai+Looped:wght@200&family=Merriweather:wght@300&family=Montserrat:wght@400;500;700&family=Patrick+Hand&family=Roboto:wght@100&family=Slabo+13px&display=swap'); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body {
+    background-image: url(imagen/netflix.jpg);
+    background-size: 100%;
+    height: 100vh;
+    background-color: rgba(80,80,80);
+    background-blend-mode: soft-light;
+
+}
+/* Imagen que sirve como icono en la pagina */
+img {
+    width: 140px;
+    height: 90px;
+    margin: 10px 0px 0px 30px;
+
+}
+/* Le aplicamos un margin al padre que contiene al form para que este mas arriba */
+.contenedor {
+    margin-top: -40px;
+}
+/* Form */
+.formulario {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 50%;
+    max-width: 400px;
+    background: rgba(0,0,0,0.9);
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+}
+/* form h1 */
+.formulario h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    margin-right: 130px;
+    padding: 10px;
+
+}
+/* Todos los input */
+input {
+    width: 80%;
+    height: 50px;
+    margin: 10px;
+    background: gray;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    padding: 0px 12px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+input[type="submit"]{
+    background: rgb(201, 2, 42);
+    color: #fff;
+    font-size: 20px;
+}
+.extra {
+    display: flex;
+    justify-content: space-between;
+
+}
+input[type="checkbox"] {
+    width: 30px;
+    height: 25px;
+    margin: 0px 0px 0px 40px;
+}
+
+.extra span {
+    color: #ccc;
+    margin-right: 110px;
+    padding-left: 10px;
+    line-height: 25px;
+
+}
+
+.extra a {
+    color: #ccc;
+    text-decoration: none;
+    margin-right: 55px;
+}
+.facebook {
+    margin: 15px 20px;
+
+}
+.facebook i {
+    color: blue;
+    font-size: 25px;
+    margin: auto;
+}
+.facebook span {
+    color: #ccc;
+    /* margin-left: 30px; */
+
+}
+
+.final span{
+    color: #ccc;
+    padding-right: 9px;
+
+}
+.final span {
+    margin-left: -23px;
+    margin-right: -8px;
+}
+.final a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+input[type="submit"]:hover{
+    color:rgb(201, 2, 42);
+    background: #ccc;
+    cursor: pointer;
+}
+::placeholder {
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+
+}
+.masInfo  {
+    margin: 10px 0;
+}
+.masInfo p {
+    text-align: justify;
+    margin: 6px 50px;
+    color: #ccc;
+    font-size: 16px;
+}
+.masInfo p span  {
+    margin-left: 4px;
+
+}
+.masInfo p span a {
+    color: blue;
+    text-decoration: none;
+}
+/* Adaptaciones a dispositivos */
+
+@media (max-width: 900px){
+    .formulario {
+        width: 80%;
+    }
+    img {
+        width: 100px;
+        height: 60px;
+        margin: 10px 0px 30px 10px;
+    }
+}
+
+@media (max-width: 620px){
+    .formulario {
+        width: 90%;
+    }
+    .icono a {
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 800;
+        color: crimson;
+        margin: 17px;
+        text-transform: uppercase;
+    
+    }
+    .formulario h1 {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        color: #fff;
+        margin-left: auto;
+        padding: 10px;
+    
+    }
+    .facebook i {
+        color: blue;
+        font-size: 25px;
+        margin-left: auto;
+    }
+    .final span {
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    .extra span {
+        margin-left: 5px;
+    }
+    .extra {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .extra input {
+        margin-left: 40px;
+    }
+    .extra span {
+        margin-right: 50px;
+    }
+
+
+}
